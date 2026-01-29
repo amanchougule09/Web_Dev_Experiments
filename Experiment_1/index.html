@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Student Registration Form</h1>
+</header>
+
+<main>
+    <!-- FORM START -->
+    <form class="student-form" action="home.html" method="get">
+
+        <div class="name">
+            <label>Student Name</label>
+            <input type="text" required>
+        </div>
+
+        <div class="div4">
+            <div>
+                <label>Mobile Number</label>
+                <input type="text" required>
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" required>
+            </div>
+        </div>
+
+        <div class="div4">
+            <div>
+                <label>Father Name</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Mother Name</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="div4">
+            <div>
+                <label>Select Course</label>
+                <select>
+                    <option>FY</option>
+                    <option>SY</option>
+                    <option>TY</option>
+                </select>
+            </div>
+            <div>
+                <label>Date of Birth</label>
+                <input type="date">
+            </div>
+        </div>
+
+        <div class="div4">
+            <div>
+                <label>Gender</label><br>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+            </div>
+            <div>
+                <label>Student Photo</label>
+                <input type="file">
+            </div>
+        </div>
+
+        <div class="div4">
+            <div>
+                <label>Select Branch</label><br>
+                <input type="checkbox"> CSE
+                <input type="checkbox"> IT
+                <input type="checkbox"> ECE
+                <input type="checkbox"> CIVIL
+            </div>
+            <div>
+                <label>Address</label>
+                <textarea></textarea>
+            </div>
+        </div>
+
+        <div class="div4">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+    <!-- FORM END -->
+</main>
+
+</body>
+</html>
