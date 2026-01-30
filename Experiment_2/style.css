@@ -1,0 +1,81 @@
+*{
+    margin: 2%;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+h1{
+    font-family: fantasy;
+}
+
+.typography {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+
+
+.tr1{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.cloud img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.cloud{
+    
+    height: 60px;
+    width: 60px;
+    animation : movebox 20s infinite alternate;
+}
+@keyframes movebox {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(50vw);
+        
+    }
+}
+
+.car img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.car{
+    
+    height: 60px;
+    width: 60px;
+    animation : movebox 4s infinite alternate;
+}
+@keyframes movebox {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(50vw);
+        
+    }
+}
+
+
