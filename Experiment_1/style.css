@@ -6,12 +6,13 @@
 }
 
 body {
-    background: #f4f6f8;
-    color: #333;
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 header {
-    background: #2c3e50;
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     color: white;
     padding: 15px;
     text-align: center;
@@ -20,7 +21,6 @@ header {
 .student-form {
     width: 80%;
     margin: 30px auto;
-    background: #ffffff;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -49,6 +49,7 @@ label {
 input[type="text"],
 input[type="date"],
 input[type="file"],
+input[type="email"],
 select,
 textarea {
     width: 100%;
@@ -71,14 +72,14 @@ input[type="checkbox"] {
 button {
     padding: 10px 20px;
     border: none;
-    background: #2c3e50;
+    background: #5e1f58;
     color: white;
     cursor: pointer;
     border-radius: 4px;
 }
 
 button[type="reset"] {
-    background: #7f8c8d;
+    background: #3765aa;
 }
 
 button:hover {
