@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electricity Bill Calculator</title>
+</head>
+<body>
+    <h2>Electricity Bill Calculator</h2>
+
+    <script>
+        
+        let units = parseInt(prompt("Enter number of units consumed:"));
+
+        let bill = 0;
+
+       
+        if (units <= 100) {
+            bill = units * 5;  
+        } 
+        else if (units <= 200) {
+            bill = (100 * 5) + (units - 100) * 7;  
+        } 
+        else {
+            bill = (100 * 5) + (100 * 7) + (units - 200) * 10;  
+        }
+      
+        alert("Total Electricity Bill = ₹" + bill);
+    </script>
+
+</body>
+</html>

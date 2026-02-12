@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Analyzer</title>
+</head>
+<body>
+    <h2>Check Console for Result</h2>
+
+    <script>
+
+        const student = {
+            name: "Student",
+            marks: [],
+
+        addMarks: function(m1, m2, m3, m4, m5, m6) {
+        this.marks = [m1, m2, m3, m4, m5, m6];
+        },
+
+        calculateTotal: function() {
+            let total = 0;
+
+            for (let i = 0; i < this.marks.length; i++) {
+                total += this.marks[i];  
+            }
+
+            return total;
+        },
+
+        calculateAverage: function() {
+            let total = this.calculateTotal();
+            let average = total / this.marks.length;   
+            return average;
+        },
+
+        displayResult: function() {
+            let total = this.calculateTotal();
+            let average = this.calculateAverage();
+
+            console.log("Marks: " + this.marks.join(", "));
+            console.log("Total Marks: " + total);
+            console.log("Average Marks: " + average.toFixed(2));
+
+            if (average >= 50) {
+                console.log("Result: Pass");
+            } else {
+                console.log("Result: Fail");
+            }
+        }
+    };
+
+        student.addMarks(75, 68, 80, 90, 55, 70);
+
+        student.displayResult();
+
+    </script>
+</body>
+</html>

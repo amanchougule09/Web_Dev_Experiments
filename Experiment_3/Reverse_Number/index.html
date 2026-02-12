@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse Number Program</title>
+</head>
+<body>
+    <h2>Reverse Number Program</h2>
+
+    <script>
+        let number = parseInt(prompt("Enter a number:"));
+
+        let reverse = 0;
+        let original = number;
+
+        while (number > 0) {
+            let digit = number % 10;     
+            reverse = reverse * 10 + digit;
+            number = Math.floor(number / 10);  
+
+        }
+        alert("Reversed Number of " + original + " is: " + reverse);
+    </script>
+
+</body>
+</html>

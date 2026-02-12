@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Driven Program</title>
+</head>
+<body>
+    <h2>Menu Driven Program</h2>
+
+    <script>
+        function square(n) {
+            return n * n;
+        }
+
+        function cube(n) {
+            return n * n * n;
+        }
+
+        function squareRoot(n) {
+            return Math.sqrt(n);
+        }
+
+        let choice = parseInt(prompt("1. Square\n2. Cube\n3. Square Root\nEnter your choice:"));
+        let value = parseFloat(prompt("Enter a number:"));
+
+        if (choice === 1) {
+            alert("Square = " + square(value));
+        } else if (choice === 2) {
+            alert("Cube = " + cube(value));
+        } else if (choice === 3) {
+            alert("Square Root = " + squareRoot(value));
+        } else {
+            alert("Invalid Choice");
+        }
+    </script>
+
+</body>
+</html>

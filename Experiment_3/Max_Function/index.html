@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maximum of Two Numbers</title>
+</head>
+<body>
+    <h2>Find Maximum of Two Numbers</h2>
+
+    <script>
+        
+        function max(a, b) {
+            if (a > b) {
+                return a;
+            } else {
+                return b;
+            }
+        }
+
+        let num1 = parseInt(prompt("Enter first number:"));
+        let num2 = parseInt(prompt("Enter second number:"));
+
+        let result = max(num1, num2);
+        alert("Maximum Number is: " + result);
+    </script>
+
+</body>
+</html>
