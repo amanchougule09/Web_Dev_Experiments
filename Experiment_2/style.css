@@ -1,0 +1,152 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    color: #333;
+}
+
+/* ================= TYPOGRAPHY SECTION ================= */
+
+.typography {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Hover Transition Effect */
+.typography:hover {
+    transform: scale(1.05);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+}
+
+.typography h1 {
+    font-family: fantasy;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    color: #6a11cb;
+    animation: glow 2s infinite alternate;
+}
+
+.typography p {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Text Glow Animation */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #6a11cb;
+    }
+    to {
+        text-shadow: 0 0 20px #2575fc;
+    }
+}
+
+/* ================= ANIMATION SECTION ================= */
+
+.animation {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.animation h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: fantasy;
+}
+
+/* Scene Container */
+.scene {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #ffffff);
+    border-radius: 10px;
+}
+
+/* Road */
+.road {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #333;
+}
+
+/* Clouds */
+.cloud {
+    position: absolute;
+    top: 30px;
+    width: 100px;
+    animation: cloudMove 25s linear infinite;
+}
+
+.cloud2 {
+    top: 80px;
+    animation-duration: 35s;
+}
+
+.cloud img {
+    width: 100%;
+}
+
+/* Car */
+.car {
+    position: absolute;
+    bottom: 60px;
+    left: -150px;
+    width: 120px;
+    animation: carMove 6s ease-in-out infinite alternate;
+    transition: transform 0.4s ease;
+}
+
+/* Hover Transition on Car */
+.car:hover {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.car img {
+    width: 100%;
+}
+
+/* ================= KEYFRAME ANIMATIONS ================= */
+
+/* Cloud Movement */
+@keyframes cloudMove {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+/* Car Movement */
+@keyframes carMove {
+    from {
+        transform: translateX(-150px);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
