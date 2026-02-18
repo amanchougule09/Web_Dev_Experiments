@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rest Operator Example</title>
+</head>
+<body>
+
+<h2>Average using Rest Operator</h2>
+
+<script>
+    function calculateAverage(...numbers) {
+        let sum = 0;
+
+        for (let num of numbers) {
+            sum += num;
+        }
+
+        let average = sum / numbers.length;
+
+        console.log("Average:", average);
+    }
+
+    calculateAverage(10, 20, 30, 40, 50);
+</script>
+
+</body>
+</html>
